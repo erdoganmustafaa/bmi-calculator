@@ -23,7 +23,7 @@ function CalculateBMI(){
 
       let result = parseFloat((weight/height/height)*10000).toFixed(2);
 
-      if(returnGender==="male" && result<26){
+      if(returnGender==="male" && result<28){
           resultElement.innerHTML=`
           <img class='image'
           src='https://st.depositphotos.com/1000833/2320/i/950/depositphotos_23207742-stock-photo-slim-man-in-white-t.jpg'
@@ -31,7 +31,7 @@ function CalculateBMI(){
             <p class="">Your BMI Score ${result}. So You are not fat boy.</p>
         `
         };
-      if(returnGender==="male" && result>26){
+      if(returnGender==="male" && result>28){
           resultElement.innerHTML=`
           <img class='image' src='https://c8.alamy.com/comp/D0T8FJ/happy-fat-man-in-a-blue-shirt-D0T8FJ.jpg'
           style="width: 200px; height:250px"></img>
@@ -39,7 +39,7 @@ function CalculateBMI(){
         `
         
       }
-      if(returnGender==="female" && result<26){
+      if(returnGender==="female" && result<28){
         
           resultElement.innerHTML=`
           <img class='image'
@@ -48,7 +48,7 @@ function CalculateBMI(){
             <p class="">Your BMI Score ${result}. You are a fit woman!</p>
         `
         };
-        if(returnGender==="female" && result>26){
+        if(returnGender==="female" && result>28){
           
           resultElement.innerHTML=`
           <img class='image' src='https://st.depositphotos.com/1763233/3200/i/950/depositphotos_32009311-stock-photo-overweight-woman-dressed-in-swimsuit.jpg'
